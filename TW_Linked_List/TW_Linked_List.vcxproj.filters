@@ -21,9 +21,15 @@
     <ClCompile Include="linked_list.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="vector_stack.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="linked_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vector_stack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

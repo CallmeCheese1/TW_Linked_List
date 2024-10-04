@@ -129,9 +129,11 @@
   <ItemGroup>
     <ClCompile Include="linked_list.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="vector_stack.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="linked_list.h" />
+    <ClInclude Include="vector_stack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

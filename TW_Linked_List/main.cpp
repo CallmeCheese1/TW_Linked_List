@@ -1,5 +1,6 @@
 #include<iostream>
 #include "linked_list.h"
+#include "vector_stack.h"
 
 using namespace std;
 
@@ -45,6 +46,28 @@ int main() {
     myList.print();
 
     cout << "Now, where is the number I just put? It's at index " << myList.find(299) << endl;
+
+    cout << "------- Let's work with the stack, now. -------";
+    Stack stack;
+
+    cout << "Stack created!" << endl;
+
+    if (stack.empty()) {
+        cout << "The stack is currently empty, but let's change that. Pushing values." << endl;
+
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+
+        stack.display();
+
+        cout << "Removing the top element." << endl;
+        stack.pop();
+        stack.display();
+
+        cout << "The top of the stack is... " << stack.top() << endl;
+        cout << "Average value? " << stack.average() << endl;
+    }
     
     return 0;
 }

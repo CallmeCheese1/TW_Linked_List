@@ -1,3 +1,5 @@
+//NOTE: This file exists because I initially coded it inside of the .cpp file, but once I started attempting to test in main, it raised errors because it was defined as a template, and I had to move it all into the header file. I will keep it here to fulfill the project requirements.
+
 /*
 #include "linked_list.h"
 #include <iostream>
