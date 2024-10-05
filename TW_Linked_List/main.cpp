@@ -47,7 +47,7 @@ int main() {
 
     cout << "Now, where is the number I just put? It's at index " << myList.find(299) << endl;
 
-    cout << "------- Let's work with the stack, now. -------";
+    cout << "------- Let's work with the stack, now. -------" << endl;
     Stack stack;
 
     cout << "Stack created!" << endl;

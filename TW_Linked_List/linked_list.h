@@ -195,11 +195,11 @@ void LinkedList<Item_Type>::insert(size_t index, const Item_Type& item) {
     //If both of those checks have been passed, iterate through the list index -1 number of times.
     for (int i = 0; i < index - 1; i++)
     {
-        cout << "Iterating through linked list for insert function -- currently on " << current->data << ", at index " << i << endl;
+        //cout << "Iterating through linked list for insert function -- currently on " << current->data << ", at index " << i << endl;
         current = current->next;
     }
 
-    cout << "Reached element " << current->data << ", right before our index " << index << endl;
+    //cout << "Reached element " << current->data << ", right before our index " << index << endl;
 
     //When we're one element before where we want to insert our new node, create a new node with the given info and set its next to my next.
     Node<Item_Type>* newNode = new Node<Item_Type>(item, current->next);
@@ -223,7 +223,7 @@ bool LinkedList<Item_Type>::remove(size_t index) {
     }
     //If not, then check that our index is less than num items, and greater than 0.
     if (index >= num_items || index < 0) {
-        cout << "(insert) The index is out of range, or negative." << endl;
+        cout << "(remove) The index is out of range, or negative." << endl;
         return false;
     }
 
@@ -235,11 +235,11 @@ bool LinkedList<Item_Type>::remove(size_t index) {
 
     for (int i = 0; i < index - 1; i++)
     {
-        cout << "Iterating through linked list for remove function -- currently on " << current->data << ", at index " << index << endl;
+        //cout << "Iterating through linked list for remove function -- currently on " << current->data << ", at index " << index << endl;
         current = current->next;
     }
 
-    cout << "Reached element " << current->data << ", right before our index " << index << endl;
+    //cout << "Reached element " << current->data << ", right before our index " << index << endl;
 
     //Set my next to my next's next -- the temp variable's next.
     temp = current->next;
@@ -268,7 +268,7 @@ size_t LinkedList<Item_Type>::find(const Item_Type& item) const {
     //If it's not empty, iterate through the list as many times as num items.
     for (int i = 0; i < num_items; i++)
     {
-        cout << "Iterating through linked list for finding function -- currently on " << current->data << ", at index " << i << endl;
+        //cout << "Iterating through linked list for finding function -- currently on " << current->data << ", at index " << i << endl;
         if (current->data == item) {
             return i;
         }
